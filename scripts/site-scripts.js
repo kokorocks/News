@@ -8,12 +8,12 @@ const lastname = ["Philips","Ostraly","Hyonda","Park","Manning","Jobs","Lanning"
 const times = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday","January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December",random(31)];  
 const problems = ['disappeared',`made ${random(100000000)}$`]
 let headlines=[]
-const images = ['path/to/img.url.png']
 
 function regenerate(){
-    headlines=[`${names[random(names.length)]} ${lastname[random(names.length)]} ${problems[random(problems.length)]} on ${times[random(times.length)]}, and you won't guess what happened next`]
+    return [`${names[random(names.length)]} ${lastname[random(names.length)]} ${problems[random(problems.length)]} on ${times[random(times.length)]}, and you won't guess what happened next`]
 }
 
 for(let i=0;i<=12;i++){
-    document.getElementById('articles').innerHTML+=`<a href='news.html?headline=${encodeURI(headlines[random(headlines.length)])}' class="box">${headlines[random(headlines.length)]}<br /><img src='assets/images/${random(0)}'></a>`;
+    headlines=regenerate()
+    document.getElementById('articles').innerHTML += `<a href='news.html?headline=${encodeURI(headlines[random(headlines.length)])}' class="box">${headlines[random(headlines.length)]}<br /><img src='assets/images/${random(0)}'></a>`;
 }
