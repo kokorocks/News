@@ -1,0 +1,20 @@
+News articles typically follow a structured format designed to present information clearly and efficiently. Here’s a breakdown of the common structure:
+
+1. **Headline**: The headline is a concise summary of the main point of the article, designed to grab attention and give readers a sense of what the article is about.
+
+2. **Lead (or Lede)**: The lead is the opening paragraph of the article, and it contains the most crucial information. It often answers the who, what, when, where, why, and how of the story. The goal of the lead is to hook the reader and provide them with the essential facts quickly.
+
+3. **Body**: The body of the article expands on the details introduced in the lead. It is typically organized in descending order of importance, a style known as the "inverted pyramid" format. This means the most critical information is presented first, followed by additional details and context. The body might include:
+   - **Supporting Details**: Facts, figures, quotes, and other evidence that provide more depth and background to the story.
+   - **Quotes**: Statements from people involved in or knowledgeable about the story, adding credibility and human interest.
+   - **Context**: Background information that helps readers understand the significance of the story and its implications.
+
+4. **Conclusion**: While not always present, the conclusion might summarize the main points, suggest implications, or provide a closing thought. It’s often used to wrap up the story neatly or indicate what might happen next.
+
+5. **Byline**: The byline gives credit to the author(s) of the article. It typically appears near the headline.
+
+6. **Dateline**: The dateline includes the location and date where the story was reported or written. It usually appears at the beginning of the article, just before the lead.
+
+7. **Additional Elements**: Depending on the story and publication, there might be additional elements like sidebars, infographics, photos, and captions to provide extra context or visual interest.
+
+The goal of this structure is to ensure that readers can quickly understand the key points of the story and delve deeper into the details if they choose to.
