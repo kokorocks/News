@@ -15,5 +15,5 @@ function regenerate(){
 }
 
 for(let i=0;i<=12;i++){
-    document.getElementById('articles').innerHTML=`<a href='news.html?headline=${encodeURI(headlines[random(headlines.length)])}' class="box">${headlines[random(headlines.length)]}<br /><img src='assets/images/${random(0)}'></a>`
+    document.getElementById('articles').innerHTML+document.getElementById('articles').innerHTML=`<a href='news.html?headline=${encodeURI(headlines[random(headlines.length)])}' class="box">${headlines[random(headlines.length)]}<br /><img src='assets/images/${random(0)}'></a>`
 }
