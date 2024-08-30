@@ -14,12 +14,12 @@ const problems = ['disappeared',`made ${random(100000000)}$`]
 let headlines=[]
 
 function regenerate(){
-    return [`${names[random(names.length)]} ${lastname[random(lastname.length)]} ${problems[random(problems.length)]} in ${times[random(times.length)]}, and you will not guess what happened next`]
+    return [`${names[random(names.length)]} ${lastname[random(names.length)]} ${problems[random(problems.length)]} on ${times[random(times.length)]}, and you won't guess what happened next`,`a fire broke out on ${times[random(times.length)]} and injured almost ${random(12)}`,'man found bunny on the ground, and you will not guess what it did next','to all you tech nerds, you need to see this','how to spend your money wisely and 15 other tips','breaking news you have to hear']
 }
 
 for(let i=0;i<=12;i++){
     headlines=regenerate()
-    console.log(`<a href='news.html?h=nes[random(headlines.length)])}' class="box">${headlines[random(headlines.length)]}<br /><img src='assets/images/${random(0)}'></a><hr>`)
+    console.log(`<a href='news.html?h=${encodeURI(headlines[random(headlines.length)])}' class="box">${headlines[random(headlines.length)]}<br /><img src='assets/images/${random(0)}'></a><hr>`)
     document.getElementById('articles').innerHTML += `<a href='news.html?h=${encodeURI(headlines[random(headlines.length)])}' class="box">${headlines[random(headlines.length)]}</a>`;
     document.getElementById('articles').innerHTML += '<br><br><br><br>' //<img src='assets/images/${random(0)}' alt='image here></a>
 }});
