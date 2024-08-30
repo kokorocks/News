@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Your code here
+
+
 function random(number){
     return Math.floor(Math.random()*number)
 }
@@ -12,3 +16,5 @@ const Lead = []
 const body = []
 const conclusions = []
 const images = []
+
+});

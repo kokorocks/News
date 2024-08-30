@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Your code here
+
+
 function random(number){
     return Math.floor(Math.random()*number)
 }
@@ -10,10 +14,12 @@ const problems = ['disappeared',`made ${random(100000000)}$`]
 let headlines=[]
 
 function regenerate(){
-    return [`${names[random(names.length)]} ${lastname[random(names.length)]} ${problems[random(problems.length)]} on ${times[random(times.length)]}, and you won't guess what happened next`]
+    return [`${names[random(names.length)]} ${lastname[random(lastname.length)]} ${problems[random(problems.length)]} in ${times[random(times.length)]}, and you won't guess what happened next`]
 }
 
 for(let i=0;i<=12;i++){
     headlines=regenerate()
-    document.getElementById('articles').innerHTML += `<a href='news.html?headline=${encodeURI(headlines[random(headlines.length)])}' class="box">${headlines[random(headlines.length)]}<br /><img src='assets/images/${random(0)}'></a>`;
-}
+    console.log(`<a href='news.html?headline=${encodeURI(headlines[random(headlines.length)])}' class="box">${headlines[random(headlines.length)]}<br /><img src='assets/images/${random(0)}'></a><hr>`)
+    document.getElementById('articles').innerHTML += `<a href='news.html?headline=${encodeURI(headlines[random(headlines.length)])}' class="box">${headlines[random(headlines.length)]}<img src='assets/images/${random(0)}' alt='image here></a>`;
+    document.getElementById('articles').innerHTML += '<br><br><br><br>'
+}});
