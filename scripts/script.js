@@ -26,7 +26,7 @@ function getQueryParam(param) {
 }
 
 // Get the value of the "stuff" parameter
-const stuffValue = getQueryParam('headline');
+const stuffValue = getQueryParam('h');
 const headline = decodeURI(stuffValue)
 
 document.getElementById('headline').innerHTML= headline
