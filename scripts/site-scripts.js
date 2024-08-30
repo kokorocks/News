@@ -14,7 +14,7 @@ const problems = ['disappeared',`made ${random(100000000)}$`]
 let headlines=[]
 
 function regenerate(){
-    return [`${names[random(names.length)]} ${lastname[random(lastname.length)]} ${problems[random(problems.length)]} in ${times[random(times.length)]}, and you won't guess what happened next`]
+    return [`${names[random(names.length)]} ${lastname[random(lastname.length)]} ${problems[random(problems.length)]} in ${times[random(times.length)]}, and you will not guess what happened next`]
 }
 
 for(let i=0;i<=12;i++){
