@@ -1,23 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>    
-    <script>    
-    function getQueryParam(param) {
-        const url = new URL(window.location.href);
-        const params = new URLSearchParams(url.search);
-        return params.get(param);
-    }
-
-    // Get the value of the "stuff" parameter
-    const stuffValue = getQueryParam('headline');
-    const headline = decodeURI(stuffValue)
-    </script>
-    <script src="scripts/site-scripts.js"></script>
+    <script src="scripts/script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    <h1 id="headline"></h1>
+    <img src="" id="img">
     <p id="article"></p>
 </body>
 </html>

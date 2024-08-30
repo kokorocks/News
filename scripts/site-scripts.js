@@ -20,7 +20,6 @@ function regenerate(){
 for(let i=0;i<=12;i++){
     headlines=regenerate()
     console.log(`<a href='news.html?headline=${encodeURI(headlines[random(headlines.length)])}' class="box">${headlines[random(headlines.length)]}<br /><img src='assets/images/${random(0)}'></a><hr>`)
-    document.getElementById('articles').innerHTML += `<a href='news.html?headline=${encodeURI(headlines[random(headlines.length)])}' class="box">${headlines[random(headlines.length)]}`;
-    document.getElementById('articles').innerHTML += `<img src='assets/images/${random(25)}' alt='image here></a>`
+    document.getElementById('articles').innerHTML += `<a href='news.html?headline=${encodeURI(headlines[random(headlines.length)])}' class="box">${headlines[random(headlines.length)]}</a>`;
     document.getElementById('articles').innerHTML += '<br><br><br><br>' //<img src='assets/images/${random(0)}' alt='image here></a>
 }});
