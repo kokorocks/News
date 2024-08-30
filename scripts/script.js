@@ -17,7 +17,7 @@ const body = []
 const conclusions = []
 const images = []
 
-document.getElementById('img').src=`assets/images/${random(25)}`
+document.getElementById('img').src=`images/${random(25)}`
 
 function getQueryParam(param) {
     const url = new URL(window.location.href);
@@ -28,6 +28,6 @@ function getQueryParam(param) {
 // Get the value of the "stuff" parameter
 const stuffValue = getQueryParam('h');
 const headline = decodeURI(stuffValue)
-
+console.log(headline)
 document.getElementById('headline').innerHTML= headline
 });
