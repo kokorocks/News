@@ -3,7 +3,7 @@ from PIL import Image
 from io import BytesIO
 import os
 from random import choice
-prompts=['a news article image','a cool looking cyber computer with binary and stuff like that','a fire with firetrucks all over the place','money','bitcoin','github','robot','a bog', 'a cat','a bunny','a random animal','a house']
+prompts=['a news article image','a cool looking cyber computer with binary and stuff like that','a fire with firetrucks all over the place','money','bitcoin','robot','a bunny','a random animal','a house','breaking news']
 realistic=['realistic','realistic','not realistic']
 def save_image(image_data, filename):
     """
@@ -27,9 +27,9 @@ def save_image(image_data, filename):
 
 # Define the folder where images will be saved
 folder = "images" 
-number = 0
-for i in range(100):
-    prompt = choice(prompts)+choice(realistic)
+number = 26
+for i in range(90):
+    prompt = f'{choice(prompts)+choice(realistic)} no people'
     try:
         # Replace "MODEL" with your specific model identifier or parameters if needed
         resp = Client.create_generation("pollinations", prompt)
